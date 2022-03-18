@@ -1,0 +1,36 @@
+# BUILDING STILL IN PROGRESS
+
+# CREDITS
+
+Thanks to [eff.org](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases) for the word list.
+
+# QUICK INFO
+I created this tool as a little project to show off on my portfolio.
+
+# SOME THOUGHTS FROM ME
+
+## Purpose of this tool
+The main purpose of this tool is to demonstrate my skills in web development. Although it is a very simple and basic page with some Javascript, I am proud of it as it is the first little project that I have done from scratch, without using any templates or external libraries.
+
+The initial build (at the time of writing this document)of it is without any libraries, but I may add some more functionality in the future.
+
+## My Personal Thoughts
+I used to use different passwords for websites, that were created using certain algorithm. This way I only had to remember the algorithm and I could reconstruct the password in my head from the website address. This was all working well, but had few disadvantages:
+* Sites that required to regularly change password, forced me to add passwords, different from algorithm.
+* If a site/app was bought or changed it's name somehow - that messed up my password again.
+
+Eventually I switched to a password manager with a single master password and now I don't really care about websites, I just generate a long, random gibberish for each website. People say, that it is risky, because if someone finds out my master password, they will get to all my passwords. Well, my answer to that is regardless which method you pick - there is a "master access risk" to all of them:
+* Algorithm - if one password is guessed, bad guys can reverse engineer all the other ones based on patterns in the compromised password.
+* Password manager - already mentioned - master password can be guessed.
+* Storing passwords in a notepad - someone might look at it.
+* At the end of the day, we use the same email address for account registration, email password becomes kind of like a master password. If that one is cracked, then all others can be changed.
+
+My personal advice for those, who want to generate diceware password: roll the actual dice or find another way to generate numbers 1-6 in a relatively random way and pick those words manually from the list - this way you are not exposing your generated password to anyone. You can also just come up with words that have no logical sense between them:
+* NOT a great example - TwoMenTalkingTogether - creates a sentence that makes a logical sense: men are having conversation.
+* BETTER example - QuantumChickenEatsEngine - have you ever seen or even thought about a quantum chicken, that eats an engine? Me neither.
+* The password above can be guessed using word dictionary attack, although it will take a long time. Make dictionary attack useless by adding extra symbols, like Quantum_Chicken_Eats_Engine.
+* Or if you will not forget, split one or more words apart: Quan_tumChickenEatsEngine.
+* At the end of they, if your mother tongue is not english, translate it to your own language if words are long enough: Kvan_tinisVisciukasValgoVarikli. Good luck cracking this one with brute force method.
+
+# DISCLAIMER
+Although the diceware generated password is secure due to the number of characters used, use this tool at your own risk. Never use a password, that has been generated on a website (yes, my site included), as the website may store it and thus compromise the security of the password.
