@@ -10,16 +10,24 @@
   </head>
 <body>
 
-	<p id="password-box"></p>
+	<h1>Diceware Password Generator</h1>
+	<h2 id="sub-title"></h2>
+
+	<h2>Password Settings</h2>
 
 	<div class="password-setup">
-
-	<p id="word-count">5</p>
 	
-	<button id="btn-increment" onclick="incrementValue()">+</button>
-	<button id="btn-decrement" onclick="decrementValue()">-</button>
+	<div>
+		<h2>Number of words</h2>
+		<p id="word-count">5</p>
+	
+		<button id="btn-increment" onclick="incrementValue()">+</button>
+		<button id="btn-decrement" onclick="decrementValue()">-</button>
+	</div>
 
 	<form id="letter-size-selector" onsubmit="generatePassword();return false">
+	<h2>Letter Capitalisation Options</h2>
+	
 		<div>
 		  <input type="radio" id="all-lower" class="radio-button" name="letter-case" value="all-lower-case" checked>
 		  <label id="all-lower-label" for="all-lower-case">all letters lower case</label>
@@ -43,9 +51,8 @@
 
 	<p>More information can be found <a href="https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases">here</a> about this type of password generation. Original world list can be found <a href="https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt">here.</a></p>
 	<p>DISCLAIMER</p>
-	<p>I created this tool as a little project to show off on my portfolio. Although the diceware generated password is secure due to the number of characters used, use this tool at your own risk. Never use a password, that has been generated on a website (yes, my site included), as the website may store it and thus compromise the security of the password. My personal advice for those, who want to generate diceware password: roll the actual dice or find another way to generate numbers 1-6 in a relatively random way and pick those words manually from the list - this way you are not exposing your generated password to anyone.</p>
+	<p>I created this tool as a little project to put on my portfolio. Although the diceware generated password is considered to be secure (with sufficient number of words), use this tool at your own risk. Never use a password that has been generated on a website (yes, my site included) for your accounts, as the website may store it and thus compromise the security of the password. My personal advice for those, who want to generate diceware password: roll the actual dice or find another way to generate numbers 1-6 in a relatively random way and pick those words manually from the list - this way you are not exposing your generated password to anyone.</p>
 	</form>
-</div>
 
 	<script src="./eff_large_wordlist.js"></script>
 	<script src="./index.js"></script>
