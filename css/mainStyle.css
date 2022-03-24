@@ -1,1 +1,11 @@
+/*height set to font size to maintain a gap between other elements, while these are empty*/
+#generated-password {
+	height: 1em;
+}
+#weak-password-warning {
+	height: 1em;
+}
 
+#generated-password::before{
+	content: "Password: ";
+}
