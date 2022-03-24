@@ -5,12 +5,27 @@
 Thanks to [eff.org](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases) for the word list.
 
 # QUICK INFO
-I created this tool as a little project to put on my portfolio.
+I created this tool as a little project to show off on my portfolio.
 
 # SOME THOUGHTS FROM ME
 
 ## Purpose of this tool
-The main purpose of this tool is to demonstrate my skills in web development. Although it is a very simple and basic page with some Javascript, I am proud of it as it is the first little project that I have done from scratch, without using any templates or external libraries.
+The main purpose of this tool is to demonstrate my skills in web development. I have started learning computer programming in my free time and, although it is a very simple and basic page with some Javascript, I am proud of it as it is the first little project that I have done from scratch by myself.
+
+## Structure of the program
+The structure is very simple: main HTML file to load the page, single Javascript file to do all the calculations, single Javascript that holds the word list and css files for visual design.
+
+The original word list, presented in a txt file has been reformated from *number word* format into that which suits my algorithm. I have used excel to quickly add necesary symbols and concatinate everything into an array, where each number and word pair is another array:
+
+*
+\[
+\[x0,y0\],
+\[x1,y1\],
+\.\.\.
+\]
+x \- diceroll digit
+y \- word for password, assigned to that digit
+*
 
 The initial build (at the time of writing this document) is without any libraries, but I may add some more functionality in the future.
 
