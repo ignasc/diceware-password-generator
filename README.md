@@ -1,4 +1,4 @@
-# BUILDING STILL IN PROGRESS
+# BUILD STILL IN PROGRESS
 
 # CREDITS
 
@@ -17,17 +17,28 @@ The structure is very simple: main HTML file to load the page, single Javascript
 
 The original word list, presented in a txt file has been reformated from *number word* format into that which suits my algorithm. I have used excel to quickly add necesary symbols and concatinate everything into an array, where each number and word pair is another array:
 
-*
-\[
-\[x0,y0\],
-\[x1,y1\],
-\.\.\.
-\]
-x \- diceroll digit
-y \- word for password, assigned to that digit
-*
 
-The initial build (at the time of writing this document) is without any libraries, but I may add some more functionality in the future.
+	[
+
+	[x0,y0],
+	[x1,y1],
+	...
+
+	]
+
+	x - diceroll digit
+	y - word for password, assigned to that digit
+
+
+## Functionality
+I have added a few basic options to allow user to select:
+- Number of words to use, up to 10.
+- Letter options
+	- All lower case
+	- First letter upper case
+	- All upper case
+- A warning message when 2 or less words are chosen for password.
+
 
 ## My Personal Thoughts
 I used to use different passwords for websites, that were created using certain algorithm. This way I only had to remember the algorithm and I could reconstruct the password in my head from the website address. This was all working well, but had few disadvantages:
