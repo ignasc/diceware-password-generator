@@ -16,7 +16,7 @@ y - word for password, assigned to that digit
 const ALL_LOWER = "1";
 const ALL_UPPER = "2";
 const FIRST_UPPER = "3";
-const wordLimit = 5;
+const wordLimit = 10;
 
 const PASSWORD_SETTINGS = {
 	allLower: false,
