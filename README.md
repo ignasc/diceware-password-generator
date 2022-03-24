@@ -5,7 +5,7 @@
 Thanks to [eff.org](https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases) for the word list.
 
 # QUICK INFO
-I created this tool as a little project to show off on my portfolio.
+I created this tool as a little project to put on my portfolio.
 
 # SOME THOUGHTS FROM ME
 
