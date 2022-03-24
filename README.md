@@ -26,10 +26,10 @@ Eventually I switched to a password manager with a single master password and no
 * At the end of the day, we use the same email address for account registration, email password becomes kind of like a master password. If that one is cracked, then all others can be changed.
 
 My personal advice for those, who want to generate diceware password: roll the actual dice or find another way to generate numbers 1-6 in a relatively random way and pick those words manually from the list - this way you are not exposing your generated password to anyone. You can also just come up with words that have no logical sense between them:
-* NOT a great example - **TwoMenTalkingTogether** - creates a sentence that makes a logical sense: men are having conversation.
+* NOT a great example - **TwoMenTalkingTogether** - creates a sentence that makes a logical sense: men are having conversation. I have read that there are word attack dictionaries that rely on words which relate to each other.
 * BETTER example - **QuantumChickenEatsEngine** - have you ever seen or even thought about a quantum chicken, that eats an engine? Me neither.
-* The password above can be guessed using word dictionary attack, although it will take a long time. Make dictionary attack useless by adding extra symbols, especially within the words, like **Quantum_Chicken_Eats_Engine** or **Quan_tumChickenEatsEngine**.
+* The password above can be guessed using word dictionary attack, although it will take a long time. Make dictionary attack useless by adding extra symbols, especially within the words, like **Quantum_ChickenEatsEngine** or **Quan_tumChickenEatsEngine**.
 * At the end of the day, if your mother tongue is not english, translate it to your own language if words are long enough: **Kvan_tinisVisciukasValgoVarikli**. Good luck cracking this one...
 
 # DISCLAIMER
-Although the diceware generated password is secure due to the number of characters used, use this tool at your own risk. Never use a password, that has been generated on a website (yes, my site included), as the website may store it and thus compromise the security of the password.
+Although the diceware generated password is considered to be secure (with sufficient number of words), use this tool at your own risk. Never use a password that has been generated on a website (yes, my site included) for your accounts, as the website may store it and thus compromise the security of the password.
