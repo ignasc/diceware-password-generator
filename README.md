@@ -29,7 +29,7 @@ My personal advice for those, who want to generate diceware password: roll the a
 * NOT a great example - **TwoMenTalkingTogether** - creates a sentence that makes a logical sense: men are having conversation. I have read that there are word attack dictionaries that rely on people making meaningful sentences to make it easier to remember.
 * BETTER example - **QuantumChickenEatsEngine** - have you ever seen or even thought about a quantum chicken, that eats an engine? Me neither. Alright, ChickenEats does make sense. So change that part: **QuantumChickenShootsEngine**.
 * The password above can be guessed using word dictionary attack, although it will take a long time. Make dictionary attack useless by adding extra symbols, especially within the words, like **Quantum_ChickenShootsEngine** or **Quan_tumChickenShootsEngine**.
-* At the end of the day, if your mother tongue is not english, translate it to your own language if words are long enough: **Kvan_tinisVisciukasSaudoVarikli** or if your language has specific symbols: **Kvan_tinisViščiukasšaudoVariklį**. Good luck cracking this one...
+* At the end of the day, if your mother tongue is not english, translate it to your own language if words are long enough: **Kvan_tinisVisciukasSaudoVarikli** or if your language has specific symbols: **Kvan_tinisViščiukasŠaudoVariklį**. Good luck cracking this one...
 
 # DISCLAIMER
 Although the diceware generated password is considered to be secure (with sufficient number of words), use this tool at your own risk. Never use a password that has been generated on a website (yes, my site included) for your accounts, as the website may store it and thus compromise the security of the password.
