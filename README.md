@@ -1,4 +1,8 @@
 # BUILD STILL IN PROGRESS
+- [x] Main program structure
+- [ ] CSS styling for mobile versoin
+- [ ] CSS styling for desktop/tablet version
+- [ ] Final checkup for any bugs.
 
 # CREDITS
 
