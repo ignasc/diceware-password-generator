@@ -9,13 +9,14 @@ It has been converter into an array for use in this script in the form of an arr
 [x,y],
 ...
 ]
-x - diceware digit
-y - word for password
+x - diceroll digit
+y - word for password, assigned to that digit
 */
 
 const ALL_LOWER = "1";
 const ALL_UPPER = "2";
 const FIRST_UPPER = "3";
+const wordLimit = 5;
 
 const PASSWORD_SETTINGS = {
 	allLower: false,
@@ -27,6 +28,8 @@ const PASSWORD_SETTINGS = {
 
 function pageLoaded(){
 	console.log("DEBUG: page loaded.");
+	document.getElementById("generated-password").innerHTML = "select options above and press \"Generate\" to generate password";
+	document.getElementById("sub-title").innerHTML = "Generate password of up to " + wordLimit + " words";
 };
 document.getElementsByTagName("body").onload = pageLoaded();
 
@@ -88,8 +91,8 @@ function checkLetterCase(string){
 /*increment number of words used in password*/
 function incrementValue(){
 	let numberOfWords = parseInt(document.getElementById("word-count").innerHTML);
-	/*check the current value to prevent going above 5*/
-	numberOfWords = numberOfWords == 5? numberOfWords : numberOfWords + 1;
+	/*check the current value to prevent going above value set in wordLimit variable*/
+	numberOfWords = numberOfWords == wordLimit? numberOfWords : numberOfWords + 1;
 	PASSWORD_SETTINGS.numberOfWords = numberOfWords;
 	document.getElementById("word-count").innerHTML = numberOfWords;
 	
