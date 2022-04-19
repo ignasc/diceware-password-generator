@@ -80,10 +80,12 @@ function generatePassword(){
 /*Set either all caps, first cap letter or leave default (all lower case)*/
 function checkLetterCase(string){
 	if(PASSWORD_SETTINGS.allLower){
+		return "<span style=\"color:red\">" + string[0] + "</span>" + string.substring(1);
 		return string;
 	} else if(PASSWORD_SETTINGS.firstCapital){
-		return string[0].toUpperCase() + string.substring(1);
+		return "<span style=\"color:red\">" + string[0].toUpperCase() + "</span>" + string.substring(1);
 	} else{
+		return "<span style=\"color:red\">" + string[0].toUpperCase() + "</span>" + string.substring(1).toUpperCase();
 		return string.toUpperCase();
 	};
 };

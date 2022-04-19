@@ -4,7 +4,10 @@
   <head>
 
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/diceware-password-generator.css">
+
+	<!--To prevent desktop page scale down on mobile devices-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Diceware Password Generator</title>
   </head>
@@ -12,49 +15,57 @@
 
 	<h1>Diceware Password Generator</h1>
 	<h2 id="sub-title"></h2>
-
+	<hr>
 	<h2>Password Settings</h2>
 
-	<div class="password-setup">
-	
-	<div>
-		<h2>Number of words</h2>
-		<p id="word-count">5</p>
-	
-		<button id="btn-increment" onclick="incrementValue()">+</button>
-		<button id="btn-decrement" onclick="decrementValue()">-</button>
-	</div>
-
-	<form id="letter-size-selector" onsubmit="generatePassword(); return false">
-	<h2>Letter Capitalisation Options</h2>
-	
-		<div>
-		  <input type="radio" id="all-lower" class="radio-button" name="letter-case" value="all-lower-case" checked>
-		  <label id="all-lower-label" for="all-lower-case">all letters lower case</label>
+	<form class="password-setup" id="letter-size-selector" onsubmit="generatePassword(); return false">
+		
+		<div id="word-count-settings-box">
+			<h3>Number of words: <span id="word-count">5</span></h3>
+		
+			<div class="flex-container">
+				<button type="button" id="btn-decrement" onclick="decrementValue()">-</button>
+				<button type="button" id="btn-increment" onclick="incrementValue()">+</button>
+			</div>
 		</div>
+		
+		<div id="letter-capitalization-settings-box">
+			<h3>Letter Capitalisation Options</h3>
+			
+			<ul>
+				<li>
+					<input type="radio" id="all-lower" class="radio-button" name="letter-case" value="all-lower-case" checked>
+					<label id="all-lower-label" for="all-lower-case">all letters lower case</label>
+				</li>
 
-		<div>
-		  <input type="radio" id="first-capital" name="letter-case" value="first-upper-case">
-		  <label id="first-upper-label" for="first-upper-case">First Letter Upper Case</label>
+				<li>
+					<input type="radio" id="first-capital" name="letter-case" value="first-upper-case">
+					<label id="first-upper-label" for="first-upper-case">First Letter Upper Case</label>
+				</li>
+
+				<li>
+					<input type="radio" id="all-capital" name="letter-case" value="all-upper-case">
+					<label id="all-upper-label" for="all-upper-case">ALL LETTERS UPPER CASE</label>
+				</li>
+			</ul>
 		</div>
-
-		<div>
-		  <input type="radio" id="all-capital" name="letter-case" value="all-upper-case">
-		  <label id="all-upper-label" for="all-upper-case">ALL LETTERS UPPER CASE</label>
-		</div>
-	</div>
-
-	<button id="btn-generate" type="submit">Generate</button>
-
-	<p id="generated-password"></p>
-	<p id="weak-password-warning"></p>
-
-	<p>More information can be found <a href="https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases">here</a> about this type of password generation. Original world list can be found <a href="https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt">here.</a></p>
-	<p>DISCLAIMER</p>
-	<p>I created this tool as a little project to put on my portfolio. Although the diceware generated password is considered to be secure (with sufficient number of words), use this tool at your own risk. Never use a password that has been generated on a website (yes, my site included) for your accounts, as the website may store it and thus compromise the security of the password. My personal advice for those, who want to generate diceware password: roll the actual dice or find another way to generate numbers 1-6 in a relatively random way and pick those words manually from the list - this way you are not exposing your generated password to anyone.</p>
+		
+		<button id="btn-generate" type="submit">Generate</button>
 	</form>
 
-	<script src="./eff_large_wordlist.js"></script>
-	<script src="./index.js"></script>
+	<p id="weak-password-warning"></p>
+	<p id="generated-password"></p>
+
+	<hr id="information-and-disclaimer-separator">
+
+	<p id="more-information-box">More information can be found on <a href="https://www.eff.org/deeplinks/2016/07/new-wordlists-random-passphrases">www.eff.org</a> about this type of password generation. Original world list can be found on <a href="https://www.eff.org/files/2016/07/18/eff_large_wordlist.txt">www.eff.org</a> post.</p>
+	
+	<hr>
+
+	<p id="disclaimer-title">DISCLAIMER</p>
+	<p id="disclaimer-information">I created this tool as a little project to put on my portfolio. Although the diceware generated password is considered to be secure (with sufficient number of words), use this tool at your own risk. Never use a password that has been generated on a website (yes, my site included) for your accounts, as the website may store it and thus compromise the security of the password. My personal advice for those, who want to generate diceware password: roll the actual dice or find another way to generate numbers 1-6 in a relatively random way and pick those words manually from the list - this way you are not exposing your generated password to anyone.</p>
+
+	<script src="./js/eff_large_wordlist.js"></script>
+	<script src="./js/diceware-password-generator.js"></script>
 
 </body>
